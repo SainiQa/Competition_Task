@@ -11,10 +11,7 @@ namespace Competition_Task.Pages
 {
     public class ProfilePage : Common
     {
-        //public ProfilePage()
-        //{
-        //    PageFactory.InitElements(driver, this);
-        //}
+        
 
         [FindsBy(How = How.XPath, Using = "//a[@class='ui basic green button' and contains(text(),'Share Skill')]")]
         public IWebElement ShareSkillButton { get; set; }
