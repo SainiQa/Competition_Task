@@ -42,7 +42,7 @@ namespace Competition_Task.Tests
             createdTitleFromListings = manageListingsPageObj.GetCreateDelete();
             screenShotPath = GetScreenShot.Capture(driver, "ScreenShotName");
 
-            //Assert.That(createdTitle, Is.EqualTo(createdTitleFromListings),"Skills NOT created");
+            
             if (editedTitle == editedTitleFromListings)
             {
                 test = extentReportObj.CreateTest("Create Skill", " Create new Skills").AddScreenCaptureFromPath(screenShotPath);
@@ -102,21 +102,7 @@ namespace Competition_Task.Tests
             //screenShotPath = GetScreenShot.Capture(driver, "ScreenShotName");
 
             manageListingsPageObj.DeleteSkills();
-
-            //int count = manageListingsPageObj.DeleteSkills();
-            //if (count == 0)
-            //{
-            //    test = extentReportObj.CreateTest("Delete Skill", " Delete Skill record").AddScreenCaptureFromPath(screenShotPath);
-            //    test.Log(Status.Info, "Skill record is Deleted successfully");
-            //    test.Log(Status.Pass, "Test passed");
-            //    Assert.Pass("Skill record is Deleted successfully");}
-            //else
-            //{
-            //    test = extentReportObj.CreateTest("Delete Skill", " Delete Skill record").AddScreenCaptureFromPath(screenShotPath);
-            //    test.Log(Status.Info, "Skill NOT deleted");
-            //    test.Log(Status.Pass, "Test Failed");
-            //    Assert.Fail("Skill record is Not deleted");
-            //}
+            
 
             string titleinlistings = manageListingsPageObj.GetCreateDelete();
             //string titleTobeDeleted = shareSkillPageObj.EditedGetTitle();
