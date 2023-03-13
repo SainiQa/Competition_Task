@@ -64,9 +64,7 @@ namespace Competition_Task.Tests
 
         [Test, Order(2)]
         public void Edit_Skills_test()
-        {
-            //test = extentReportObj.CreateTest("Edit Skills", " Edit the already created Skills");
-            
+        {                     
 
             manageListingsPageObj.NavigateToEdit();
             shareSkillPageObj.Edit_Skills();
