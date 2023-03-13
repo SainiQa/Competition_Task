@@ -38,12 +38,7 @@ namespace Competition_Task.Pages
         [FindsBy(How = How.Id, Using = "submit-btn")]
         public IWebElement submitButton;
 
-        //public SignupPage()
-
-        //{
-        //    PageFactory.InitElements(driver, this);
-
-        //}
+        
 
 
         public void SignUpSteps()
