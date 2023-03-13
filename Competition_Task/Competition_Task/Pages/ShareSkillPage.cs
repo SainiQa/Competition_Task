@@ -20,10 +20,7 @@ namespace Competition_Task.Pages
     public class ShareSkillPage : Common
     {
 
-        //public ShareSkillPage()
-        //{
-        //    PageFactory.InitElements(driver, this);
-        //}
+        
 
         //Enter the Title in textbox
         [FindsBy(How = How.Name, Using = "title")]
@@ -193,12 +190,7 @@ namespace Competition_Task.Pages
             save.Click();
             Wait(5);
 
-            //Thread.Sleep(20000);            
-            ////Scroll up and click on "Manage Listing tab"
-            //driver.ExecuteJavaScript("window.scrollBy(0,-1450)", "");
-            //driver.SwitchTo().DefaultContent();
-            //Thread.Sleep(10000);
-            //manageListingTab.Click();
+            
 
         }
 
