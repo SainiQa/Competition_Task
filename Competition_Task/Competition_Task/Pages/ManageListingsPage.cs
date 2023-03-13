@@ -13,11 +13,7 @@ namespace Competition_Task.Pages
 {
     public class ManageListingsPage:Common
     {
-        //public ManageListingsPage()
-
-        //{
-        //    PageFactory.InitElements(driver, this);
-        //}
+        
 
         [FindsBy(How = How.XPath, Using = "//section[@class='nav-secondary']/div[@class='ui eight item menu']/a[@href='/Home/ListingManagement']")]
 
