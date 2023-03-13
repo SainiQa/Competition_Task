@@ -99,20 +99,13 @@ namespace Competition_Task.Tests
         [Test, Order(3)]
         public void Delete_Skills_Test()
         {
-            //screenShotPath = GetScreenShot.Capture(driver, "ScreenShotName");
-
+        
             manageListingsPageObj.DeleteSkills();
-            
-
-            string titleinlistings = manageListingsPageObj.GetCreateDelete();
+             string titleinlistings = manageListingsPageObj.GetCreateDelete();
             //string titleTobeDeleted = shareSkillPageObj.EditedGetTitle();
             string titleTobeDeleted = manageListingsPageObj.DeleteTitletocompare();
-
-
             Console.WriteLine(titleinlistings);
             Console.WriteLine(titleTobeDeleted);
-
-
             screenShotPath = GetScreenShot.Capture(driver, "ScreenShotName");
 
             if (titleinlistings != titleTobeDeleted)
